@@ -12,7 +12,7 @@ function Budget({ budget, index }) {
   const handleDelete = () => {
     axios
       .delete(`${API}/transactions/${index}`)
-      .then((response) => window.location.reload(true)) //so it reloads the page
+      .then((response) => navigate(`/transactions`))
       .catch((error) => console.error(error));
   };
 
