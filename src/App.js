@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Nav />
+      <Nav  accTotal={accTotal} setAccTotal={setAccTotal} />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

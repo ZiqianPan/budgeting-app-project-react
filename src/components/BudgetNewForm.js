@@ -8,7 +8,7 @@ export default function BudgetNewForm() {
   const [budget, setBudget] = useState({
     item_name: "",
     amount: "",
-    date: "",
+    date: {},
     from: "",
     category: "",
   });
@@ -41,7 +41,7 @@ export default function BudgetNewForm() {
         <input
           id="date"
           value={budget.date}
-          type="text"
+          type="date"
           onChange={handleTextChange}
           placeholder="date"
           required
