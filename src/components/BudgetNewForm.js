@@ -37,7 +37,7 @@ export default function BudgetNewForm() {
   return (
     <div className="New">
       <form onSubmit={handleSubmit}>
-        <label>Date</label>
+        <label>Date:</label>
         <input
           id="date"
           value={budget.date}
@@ -46,8 +46,8 @@ export default function BudgetNewForm() {
           placeholder="date"
           required
         />
-
-        <label>Name</label>
+        <br /> 
+        <label>Name:</label>
         <input
           id="item_name"
           value={budget.item_name}
@@ -56,8 +56,8 @@ export default function BudgetNewForm() {
           placeholder="Item Name"
           required
         />
-
-        <label>Amount</label>
+        <br /> 
+        <label>Amount:</label>
         <input
           id="amount"
           value={budget.amount}
@@ -66,7 +66,8 @@ export default function BudgetNewForm() {
           placeholder="Amount"
           required
         />
-        <label>From</label>
+        <br />
+        <label>From:</label>
         <input
           id="from"
           value={budget.from}
@@ -75,8 +76,8 @@ export default function BudgetNewForm() {
           placeholder="From"
           required
         />
-        
-        <label>Category</label>
+        <br />
+        <label>Category:</label>
         <input
           id="category"
           value={budget.category}
