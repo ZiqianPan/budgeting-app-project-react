@@ -85,6 +85,16 @@ export default function BudgetEditForm() {
         placeholder="From"
         required
       />
+      
+      <label>Category</label>
+      <input
+        id="category"
+        value={budget.category}
+        type="text"
+        onChange={handleTextChange}
+        placeholder="category"
+        required
+      />
 
       <br />
       <input type="submit" />
